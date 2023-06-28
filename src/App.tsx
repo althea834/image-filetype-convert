@@ -64,13 +64,13 @@ function App() {
             <section>
                 <section className="pt-9 text-center">
                     <UploadButton
-                        className="inline-block px-4 py-2 font-medium border border-solid border-cyan-700 rounded-lg hover:bg-cyan-700 hover:text-slate-50"
+                        className="inline-block px-4 py-2 text-black font-medium border border-solid border-cyan-700 rounded-lg hover:bg-cyan-700 hover:text-slate-50"
                         text={"上傳圖片"}
                         onUploadChange={handleUpload}
                         accept="image/webp"
                     ></UploadButton>
                     <section className="mx-auto py-4 ">
-                        <canvas ref={canvasRef} id="canvas"></canvas>
+                        <canvas ref={canvasRef} id="canvas" />
                     </section>
                 </section>
                 <ul className={`flex justify-around mt-5 ${className}`}>
@@ -83,7 +83,7 @@ function App() {
                                 convertImageFiletype(buttonJpgRef, "jpg");
                             }}
                             text={"webp 轉 jpg"}
-                        ></LinkButton>
+                        />
                     </li>
                     <li>
                         <LinkButton
@@ -94,7 +94,7 @@ function App() {
                                 convertImageFiletype(buttonPngRef, "png");
                             }}
                             text={"webp 轉 png"}
-                        ></LinkButton>
+                        />
                     </li>
                 </ul>
             </section>

@@ -20,7 +20,7 @@ const UploadButton = ({
                 className="hidden"
                 accept={props?.accept}
                 onChange={onUploadChange}
-            ></input>
+            />
             {text}
         </label>
     );
